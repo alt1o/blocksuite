@@ -152,7 +152,7 @@ export class ShapeMenu extends LitElement {
             return html`
               <div
                 class="icon-container"
-                role=${name}
+                role="button"
                 ?disabled=${disabled}
                 ?clicked=${this.selectedShape === name}
                 @click=${() => {
@@ -283,7 +283,7 @@ export class EdgelessToolBar extends LitElement {
           return html`
             <div
               class="icon-container"
-              role=${name}
+              role="button"
               ?disabled=${disabled}
               ?clicked=${this._selectedIcon === name}
               @click=${() => {
